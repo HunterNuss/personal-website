@@ -10,14 +10,16 @@ import { Route, Routes, Link} from "react-router-dom"
 
 export default function App() {
   return (
-    <div>
+    <div id="outer-container">
       <Navbar />
+      <div id="page-wrap">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/education" element={<Education/>}/>
           <Route path="/work" element={<Work/>}/>
           <Route path="/projects" element={<Projects/>}/>
         </Routes>
+      </div>
     </div>
   )
 
